@@ -1,0 +1,319 @@
+@media(max-width:1200px) {
+
+  .gallery__images {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+      "image1 image1" 
+      "image2 image3"
+      "image4 image5" 
+      "image6 image6";
+  }
+
+  .gallery__image2, .gallery__image4 {
+    justify-self: end;;
+  }
+
+  .gallery__image3, .gallery__image5 {
+    justify-self: start;;
+  }
+
+}  
+
+@media(max-width:1155px) {
+
+  .header__navbar {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .header__list {
+    gap: 15px;
+  }
+
+  .header__heading {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .header__cards {
+    justify-content: center;
+    gap: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .history__wrapper {
+    margin-top: 750px;
+  }
+
+  .menu__cards {
+    max-width: 700px;
+  }
+
+}
+
+@media(max-width:1100px) {
+
+  .history__wrapper {
+    justify-content: center;
+  }
+
+  .history__image-box {
+    margin-top: 45px;
+  }
+
+  .offer__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+}
+
+
+@media(max-width:960px) {
+
+  .header__navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .dishes__card-price {
+    flex-grow: 1;
+    text-align: center;
+  }  
+
+  .dishes__card-name::after {
+    display: none;
+  }
+
+}
+
+@media(max-width:860px) {
+
+  .header__menu {
+    display: block;
+    z-index: 2;
+  }
+
+  .header__list {
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(0px, -100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 25px;
+    padding: 70px 20px 30px;
+  }
+
+  .header__contact-phone::before {
+    display: none;
+  }
+
+  .header__title-row-one {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .header__title-row-two {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .header__title-row-three {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .header__title-row-three::after, .header__title-row-three::before {
+    display: none;
+  }
+
+  .header__heading-button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 21px;
+  }
+
+  .dishes__content {
+    flex-wrap: wrap;
+  }
+
+  .dishes__cards {
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 87px;
+  }  
+
+  .dishes__card-name::after {
+    display: block;
+  }
+
+  .dishes__card-price {
+    flex-grow: 0;
+    text-align: justify;
+  }  
+
+  .dishes__image-box {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .gallery__title {
+    margin-top: 80px;
+    margin-bottom: 70px;
+  }
+
+  .staff__title {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+}
+
+@media(max-width:790px) {
+  .offer__wrapper {
+    justify-content: center;
+  }
+
+  .offer__title-row-one {
+    font-size: 40px;
+    text-align: center;
+  } 
+  
+  .offer__title-row-two {
+    text-align: center;
+  }  
+
+  .dishes__wrapper {
+    margin-top: 63px;
+    margin-bottom: 127px;
+  }  
+
+  .dishes__content {
+    margin-top: 72px;
+  }
+
+  .footer { 
+    margin-top: 20px;
+  }
+}
+
+@media(max-width:757px) {
+
+  .history__wrapper {
+    margin-top: 1150px;
+  }
+
+  .menu__cards {
+    max-width: 350px;
+  }
+  
+}
+
+@media(max-width:650px) {
+  
+  .history__image-box, .history__content {
+    padding: 0 15px;
+  }
+
+  .gallery::before, .gallery::after {
+    display: none;
+  }
+
+  .gallery__images {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+      "image1"
+      "image2"
+      "image3"
+      "image4"
+      "image5" 
+      "image6";
+  }
+
+  .gallery__box-image {
+    width: 290px;
+  }
+
+  .gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+  .gallery__image2, .gallery__image3, .gallery__image4, .gallery__image5 {
+    justify-self: center;;
+  }
+  
+}
+
+@media(max-width:500px) {
+
+  .header__title-row-one {
+    font-size: 30px;
+  }
+
+  .header__title-row-two {
+    font-size: 40px;
+  }
+
+  .header__title-row-three {
+    font-size: 15px;
+  }
+
+  .history__statistics-box {
+    flex-direction: column;
+  }
+
+  .offer__title-row-one {
+    font-size: 30px;
+  }  
+  
+  .dishes__card-name::after {
+    display: none;
+  }
+
+  .dishes__card-price {
+    flex-grow: 1;
+    text-align: center;
+  }  
+
+  .dishes__cards {
+    padding-right: 0;
+  }
+
+  .dishes__card-name {
+    font-size: 22px;
+  }
+
+  .dishes__card {
+    gap: 8px;
+  } 
+
+  .staff__box-image {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+}
+
+@media(max-width:380px) {
+
+  .header__card {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .menu__cards {
+    max-width: 290px;
+  }
+
+}
