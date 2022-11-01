@@ -152,7 +152,9 @@ header {
 
 .header__menu-close {
   height: 18px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
   position: fixed;
   top: 30px;
   right: 30px;
@@ -163,7 +165,8 @@ header {
 }
 
 .header__menu-close--active {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .header__title-row-one {
