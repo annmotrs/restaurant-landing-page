@@ -78,8 +78,7 @@ header {
 }
 
 .header__list.header__list--active {
-  transform: translate(0px, 0px);
-  transition: transform 0.5s;
+  top: 0;
 }
 
 .header__list {
@@ -94,12 +93,12 @@ header {
 }
 
 .header__link {
-  transition: 0.5s;
+  transition: color 0.5s;
 }
 
 .header__link:hover {
   color: #fdaa2d;
-  transition: 0.5s;
+  transition: color 0.5s;
 }
 
 .header__link-phone {
@@ -154,6 +153,9 @@ header {
 .header__menu-close {
   height: 18px;
   display: none;
+  position: fixed;
+  top: 30px;
+  right: 30px;
 }
 
 .header__menu-open--active {
@@ -669,6 +671,7 @@ header {
   left: 0;
   z-index: 2;  
   visibility: hidden;
+  overflow-y: auto;
 }
 
 .modal-dialog.modal-dialog--active {
@@ -849,7 +852,8 @@ header {
 }
 
 .modal-dialog__input-date::-webkit-calendar-picker-indicator {
- opacity: 0;
+  -webkit-appearance: none;
+  opacity: 0;
 }
 
 .modal-dialog__select {
@@ -1063,7 +1067,6 @@ header {
 .disable-scroll {
   position: fixed;
   overflow: hidden;
-  height: 100vh;
   width: 100%;
   left: 0;
   top: 0;
