@@ -811,6 +811,7 @@ header {
   display: inline-block;
   width: 15px;
   height: 15px;
+  cursor: pointer;
 }
 
 .modal-dialog__button-plus::before, .modal-dialog__button-minus::before {
